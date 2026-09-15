@@ -92,11 +92,11 @@ export default function Landing() {
                 <div className="card card-pad" style={{ background: 'var(--surface-solid)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 18 }}>
                     <div className="avatar avatar-md" style={{ background: 'var(--accent-gradient)' }}>JD</div>
-                    <div>
-                      <div style={{ fontWeight: 700, fontSize: 14 }}>Jordan Diallo</div>
-                      <div className="text-subtle" style={{ fontSize: 12 }}>jordan@keystone.dev</div>
+                    <div style={{ minWidth: 0, overflow: 'hidden' }}>
+                      <div style={{ fontWeight: 700, fontSize: 14, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Jordan Diallo</div>
+                      <div className="text-subtle" style={{ fontSize: 12, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>jordan@keystone.dev</div>
                     </div>
-                    <span className="badge badge-success" style={{ marginLeft: 'auto' }}><span className="badge-dot" />Active</span>
+                    <span className="badge badge-success" style={{ marginLeft: 'auto', flexShrink: 0 }}><span className="badge-dot" />Active</span>
                   </div>
                   <div className="grid grid-2" style={{ gap: 10 }}>
                     <div className="stat-card card" style={{ padding: 14 }}>
@@ -132,7 +132,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section id="endpoints" className="container" style={{ padding: '40px 0 20px' }}>
+        <section id="endpoints" className="container" style={{ paddingBlock: '40px 20px' }}>
           <div className="section-head">
             <div>
               <h3 style={{ fontSize: 22 }}>
